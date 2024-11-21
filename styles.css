@@ -1,0 +1,107 @@
+/* Birthday Page Styling */
+.birthday-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.birthday-cake {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.name-input {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.show-name-btn,
+.new-name-btn,
+.celebrate-btn {
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    margin: 5px;
+    background-color: #00732F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.show-name-btn:hover,
+.new-name-btn:hover,
+.celebrate-btn:hover {
+    background-color: #005f26;
+}
+
+/* Stylized Birthday Name */
+.birthday-name {
+    font-size: 3rem;
+    color: #ff5733;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #ffcccb;
+}
+
+/* Stylized Birthday Wish */
+.birthday-wish {
+    font-size: 2rem;
+    color: #00732F;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #b8e994;
+}
+
+/* Firework Container */
+#fireworksContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10; /* Ensures it’s above other content */
+}
+
+/* Firework Spark Styling */
+.spark {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: explode 1.5s ease-out forwards;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Spark glow effect */
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0.5) translate(0, 0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1) translate(var(--x), var(--y)); /* Move to random positions */
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3); /* Shrink effect */
+    }
+}
+
+/* Firework Container */
+.firework-container {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
