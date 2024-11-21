@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="birthday-container">
+        <img src="cake.gif" alt="Birthday Cake" class="birthday-cake">
+        <div class="input-section">
+            <!-- <input type="text" id="nameInput" placeholder="Enter your name" class="name-input"> -->
+            <button id="showNameBtn" class="show-name-btn">Click here</button>
+        </div>
+        <h1 id="birthdayName" class="birthday-name" style="display: none;"></h1>
+        <p id="birthdayWish" class="birthday-wish" style="display: none;"></p>
+        <button id="celebrateBtn" class="celebrate-btn" style="display: none;">Celebrate</button>
+        <!-- <button id="newNameBtn" class="new-name-btn" style="display: none;">Enter Another Name</button> -->
+    </div>
+
+    <!-- Fireworks Container -->
+    <div id="fireworksContainer"></div>
+
+    <!-- Audio element -->
+    <audio id="birthdayMusic" src="happy-birthday.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
